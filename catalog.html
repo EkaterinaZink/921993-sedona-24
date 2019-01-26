@@ -9,6 +9,8 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
+<!-- Нет логотипа -->
+
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="foto.html">Фото и видео</a></li>
@@ -35,6 +37,7 @@
           <h3>
             <a href="catalog-item.html">
               <span class="catalog-item-title">Amara Resort & Spa</span>
+<!-- <span class="catalog-item-title"> лишний. В остальных местах тоже. -->
             </a>
           </h3>
           <p>
@@ -44,10 +47,13 @@
           </p>
           <p class="catalog-item-price">
             <b>Гостиница</b>
+<!-- <b> это тег, который выделяет текст визуально жирным. В этом месте это не нужно. Рекомендую ограничиться тегом <span> -->
             <b>От 4000 Р.</b>
             <a class="button" href="#">Подробнее</a>
             <a class="button" href="#">Забронировать</a>
+<!-- Кнопки целесообразнее вынести в отдельный абзац или див. -->
             <b>Рейтинг: 8,5</b>
+<!-- Рейтинг нет смысла оборачивать в тег <b>. Используйте абзац -->
           </p>
         </li>
 
