@@ -10,10 +10,8 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/index-logo.svg" width="368" height="153" alt="Фото Седона Welcome">
+        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Седона">
       </a>
-      <!-- Нет логотипа - Добавлен логотип OK -->
-
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="foto.html">Фото и видео</a></li>
@@ -28,6 +26,37 @@
 
     <h1 class="page-title">Каталог гостиниц</h1>
 
+
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр стоимости</h2>
+      <!--Заглушка-->
+    </section>
+
+    <section class="filters">
+      <h2 class="filters-catalog">Инфраструктура</h2>
+      <ul>
+        <li class="filter-item">Бассейн</li>
+        <li class="filter-item">Парковка</li>
+        <li class="filter-item">Wi-Fi</li>
+      </ul>
+    </section>
+
+    <section class="filters">
+      <h2 class="filters-catalog">Тип Жилья</h2>
+      <ul>
+        <li class="filter-item">Гостиница</li>
+        <li class="filter-item">Мотель</li>
+        <li class="filter-item">Апартаменты</li>
+      </ul>
+    </section>
+
+    <ul class="breadcrumbs">
+      <li><a class="button" href="#">По цене</a></li>
+      <li><a class="button" href="#">По типу</a></li>
+      <li class="breadcrumbs-current">По рейтингу</li>
+    </ul>
+
+
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <!--Заглушка-->
@@ -39,7 +68,6 @@
         <li class="catalog-item">
           <h3>
             <a href="catalog-item.html">Amara Resort & Spa</a>
-            <!-- <span class="catalog-item-title"> лишний. В остальных местах тоже. - OK -->
           </h3>
           <p>
             <a href="catalog-item-image">
@@ -48,15 +76,12 @@
           </p>
           <p class="catalog-item-price">
             <span>Гостиница</span>
-            <!-- <b> это тег, который выделяет текст визуально жирным. В этом месте это не нужно. Рекомендую ограничиться тегом <span> - OK -->
-            <b>От 4000 Р.</b>
+            <span>От 4000 Р.</span>
             <p class="button-booking">
               <a class="button" href="#">Подробнее</a>
               <a class="button" href="#">Забронировать</a>
             </p>
-            <!-- Кнопки целесообразнее вынести в отдельный абзац или див. - OK-->
             <p>Рейтинг: 8,5</p>
-            <!-- Рейтинг нет смысла оборачивать в тег <b>. Используйте абзац  - OK-->
           </p>
         </li>
 
@@ -71,7 +96,7 @@
           </p>
           <p class="catalog-item-price">
             <span>Мотель</span>
-            <b>От 3000 Р.</b>
+            <span>От 3000 Р.</span>
             <p class="button-booking">
               <a class="button" href="#">Подробнее</a>
               <a class="button" href="#">Забронировать</a>
@@ -91,7 +116,7 @@
           </p>
           <p class="catalog-item-price">
             <span>Апартаменты</span>
-            <b>От 2000 Р.</b>
+            <span>От 2000 Р.</span>
             <p class="button-booking">
               <a class="button" href="#">Подробнее</a>
               <a class="button" href="#">Забронировать</a>
