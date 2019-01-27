@@ -9,7 +9,10 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-<!-- Нет логотипа -->
+      <a class="main-header-logo">
+        <img src="img/index-logo.svg" width="368" height="153" alt="Фото Седона Welcome">
+      </a>
+      <!-- Нет логотипа - Добавлен логотип OK -->
 
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -35,10 +38,8 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">Amara Resort & Spa</span>
-<!-- <span class="catalog-item-title"> лишний. В остальных местах тоже. -->
-            </a>
+            <a href="catalog-item.html">Amara Resort & Spa</a>
+            <!-- <span class="catalog-item-title"> лишний. В остальных местах тоже. - OK -->
           </h3>
           <p>
             <a href="catalog-item-image">
@@ -46,22 +47,22 @@
             </a>
           </p>
           <p class="catalog-item-price">
-            <b>Гостиница</b>
-<!-- <b> это тег, который выделяет текст визуально жирным. В этом месте это не нужно. Рекомендую ограничиться тегом <span> -->
+            <span>Гостиница</span>
+            <!-- <b> это тег, который выделяет текст визуально жирным. В этом месте это не нужно. Рекомендую ограничиться тегом <span> - OK -->
             <b>От 4000 Р.</b>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
-<!-- Кнопки целесообразнее вынести в отдельный абзац или див. -->
-            <b>Рейтинг: 8,5</b>
-<!-- Рейтинг нет смысла оборачивать в тег <b>. Используйте абзац -->
+            <p class="button-booking">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
+            </p>
+            <!-- Кнопки целесообразнее вынести в отдельный абзац или див. - OK-->
+            <p>Рейтинг: 8,5</p>
+            <!-- Рейтинг нет смысла оборачивать в тег <b>. Используйте абзац  - OK-->
           </p>
         </li>
 
         <li class="catalog-item">
           <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">Desert Quail INN</span>
-            </a>
+            <a href="catalog-item.html">Desert Quail INN</a>
           </h3>
           <p>
             <a href="catalog-item-image">
@@ -69,19 +70,19 @@
             </a>
           </p>
           <p class="catalog-item-price">
-            <b>Мотель</b>
+            <span>Мотель</span>
             <b>От 3000 Р.</b>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
-            <b>Рейтинг: 8,9</b>
+            <p class="button-booking">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
+            </p>
+            <p>Рейтинг: 8,9</p>
           </p>
         </li>
 
         <li class="catalog-item">
           <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">Villas AT Poco Diablo</span>
-            </a>
+            <a href="catalog-item.html">Villas AT Poco Diablo</a>
           </h3>
           <p>
             <a href="catalog-item-image">
@@ -89,11 +90,13 @@
             </a>
           </p>
           <p class="catalog-item-price">
-            <b>Апартаменты</b>
+            <span>Апартаменты</span>
             <b>От 2000 Р.</b>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
-            <b>Рейтинг: 9,2</b>
+            <p class="button-booking">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
+            </p>
+            <p>Рейтинг: 9,2</p>
           </p>
         </li>
 
