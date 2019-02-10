@@ -104,12 +104,41 @@
       </p>
       <div class="booking-data">
         <a class="button" href="catalog.html">Поиск гостицы в Седоне</a>
-        <img src="img/calendar.svg" width="21" height="22" alt="calendar">
-        <img src="img/calendar.svg" width="21" height="22" alt="calendar">
-        <a class="button" href="found.html">Найти</a>
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset>
+            <legend class="visually-hidden">Даты поездки</legend>
+            <p class="booking-info">
+              <label for="checkin-date">Дата заезда:</label>
+              <input id="checkin-date" name="checkin" type="date">
+              <img src="img/calendar.svg" width="21" height="22" alt="calendar">
+                    </p>
+            <p class="booking-info">
+              <label for="checkout-date">Дата выезда:</label>
+              <input id="checkout-date" name="checkout" type="date">
+              <img src="img/calendar.svg" width="21" height="22" alt="calendar">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend class="visually-hidden">Количество гостей</legend>
+
+            <label for="booking-adults">Взрослые:</label>
+
+            <button type="button" class="quantity-button" aria-label="Уменьшить количество взрослых">-</button>
+            <input id="booking-adults" name="adults" type="text" pattern="\d+" placeholder="2">
+            <button type="button" class="quantity-button" aria-label="Увеличить количество взрослых">+</button>
+
+            <label for="booking-children">Дети:</label>
+
+            <button type="button" class="quantity-button" aria-label="Уменьшить количество детей">-</button>
+            <input id="booking-children" name="children" type="text" pattern="\d+" placeholder="0">
+            <button type="button" class="quantity-button" aria-label="Увеличить количество детей">+</button>
+          </fieldset>
+          <button type="submit">Найти</button>
+        </form>
       </div>
     </section>
-    <img src="img/map.jpg" width="1200" height="593" alt="map">
+    <img src="img/map.jpg" width="1200" height="593" alt="Карта">
   </main>
 
   <footer class="main-footer">
@@ -118,15 +147,15 @@
     </p>
     <ul class="footer-social">
       <li><a class="social-button" href="#">
-          <img src="img/twitter.svg" width="17" height="15" alt="twitter">
+          <img src="img/twitter.svg" width="17" height="15" alt="Седона в Твитере">
         </a>
       </li>
       <li><a class="social-button" href="#">
-          <img src="img/facebook.svg" width="12" height="22" alt="facebook">
+          <img src="img/facebook.svg" width="12" height="22" alt="Седона в Фейсбук">
         </a>
       </li>
       <li><a class="social-button" href="#">
-          <img src="img/youtube.svg" width="20" height="16" alt="youtube">
+          <img src="img/youtube.svg" width="20" height="16" alt="Седона Видео">
         </a>
       </li>
     </ul>
