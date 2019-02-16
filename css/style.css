@@ -1,0 +1,71 @@
+.star {
+  margin-bottom: 30px;
+  background-image: url('../img/star.svg');
+	width: 18px;
+  height: 17px;
+  background-repeat: space;
+}
+
+.star-one {
+  width: 18px;
+}
+
+.star-two {
+  width: 41px;
+}
+
+.star-three {
+  width: 64px;
+}
+
+.star-four {
+  width: 87px;
+}
+
+.calendar-button{
+  border:none;
+  background-image: url('../img/calendar.svg');
+	width: 27px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-button{
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  border:none;
+  background-repeat: no-repeat;
+}
+
+.twitter
+{
+  background-image: url('../img/twitter.svg');
+  background-position: center;
+}
+.facebook
+{
+  background-image: url('../img/facebook.svg');
+  background-position: center;
+}
+.youtube
+{
+  background-image: url('../img/youtube.svg');
+  background-position: center;
+}
+.quantity-button
+{
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border:none;
+  background-repeat: no-repeat;
+}
+.welcome{
+  background-image: url('../img/background-photo.jpg');
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -82px;
+}
+
