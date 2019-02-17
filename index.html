@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +14,6 @@
       <a class="main-header-logo">
         <img src="img/index-logo.png" width="140" height="71" alt="Логотип Седона">
       </a>
-
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="foto.html">Фото и видео</a></li>
@@ -24,53 +24,48 @@
   </header>
 
   <main class="container">
-    <h1>Седона</h1>
-
-    <div class="welcome">
-      <img src="img/welcome.png" width="459" height="353" >
-    </div>
+    <h1 class="visually-hidden">Седона</h1>
+    <div class="welcome"></div>
 
     <section class="features">
-      <h2 class="description">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <ul>
-        <li class="city-features">
-          <div class="first-feature">
+
+        <li class="first-feature">
+          <div class="city-features">
             <p>Настоящий городок</p>
             <p>-№1-</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="intro-foto">
-            <img src="img/flag.png" width="800" height="256" alt="Welcome">
-          </div>
-          <div class="additional-info">
-            <p class="list-foto">
-              <img src="img/icon-1.svg" width="75" height="72" alt="Hotels">
-            </p>
-            <a class="button" href="catalog.html">Жилье</a>
-            <p>Рекомендуем пожить в настоящем Мотеле, все как в кино</p>
-          </div>
-          <div class="additional-info">
-            <p class="list-foto">
-              <img src="img/icon-3.svg" width="75" height="72" alt="Food">
-            </p>
-            <a class="button" href="food.html">Еда</a>
-            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-          </div>
-          <div class="additional-info">
-            <p class="list-foto">
-              <img src="img/icon-2.svg" width="75" height="72" alt="Gifts">
-            </p>
-            <a class="button" href="gifts.html">Сувениры</a>
-            <p>Не только китайского, но и местного Производства!</p>
-          </div>
         </li>
 
-        <li class="city-features">
-          <div class="intro-foto">
-            <img src="img/bridge.png" width="800" height="256" alt="Gifts">
-          </div>
-          <div class="first-feature">
+        <div class="city-features">
+          <p class="list-foto">
+            <img src="img/icon-1.svg" width="75" height="72" alt="Hotels">
+          </p>
+          <a class="button" href="catalog.html">Жилье</a>
+          <p>Рекомендуем пожить в настоящем Мотеле, все как в кино</p>
+        </div>
+        <div class="city-features">
+          <p class="list-foto">
+            <img src="img/icon-3.svg" width="75" height="72" alt="Food">
+          </p>
+          <a class="button" href="food.html">Еда</a>
+          <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+        </div>
+        <div class="city-features">
+          <p class="list-foto">
+            <img src="img/icon-2.svg" width="75" height="72" alt="Gifts">
+          </p>
+          <a class="button" href="gifts.html">Сувениры</a>
+          <p>Не только китайского, но и местного Производства!</p>
+        </div>
+
+        </li>
+
+        <li class="intro-foto">
+          <div class="city-features">
             <p>Там есть мост дьявола</p>
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -101,25 +96,18 @@
 
     <section class="booking">
       <strong>Заинтересовались?</strong>
-      <p class="booking-info">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостинц в Седоне
-      </p>
+      <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостинц в Седоне</p>
       <div class="booking-data">
-        <p>Поиск гостицы в Седоне</p>
-<!-- "Поиск гостицы в Седоне" должна быть ссылкой. Эта ссылка будет управлять открытием\закрытием формы -->
-
+        <a class="find-hotel brown-button" href="catalog.html">Поиск гостицы в Седоне</a>
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset>
             <legend class="visually-hidden">Даты поездки</legend>
-            <p class="booking-info">
-              <label for="checkin-date">Дата заезда:</label>
-              <input id="checkin-date" name="checkin" type="date">
-              <button type="button" class="calendar-button" aria-label="Календарь"></button>
-            </p>
-            <p class="booking-info">
-              <label for="checkout-date">Дата выезда:</label>
-              <input id="checkout-date" name="checkout" type="date">
-              <button type="button" class="calendar-button" aria-label="Календарь"></button>
-            </p>
+            <label for="checkin-date">Дата заезда:</label>
+            <input id="checkin-date" name="checkin" type="date">
+            <button type="button" class="calendar-button" aria-label="Календарь"></button>
+            <label for="checkout-date">Дата выезда:</label>
+            <input id="checkout-date" name="checkout" type="date">
+            <button type="button" class="calendar-button" aria-label="Календарь"></button>
           </fieldset>
 
           <fieldset>
@@ -133,28 +121,26 @@
             <input id="booking-children" name="children" type="text" pattern="\d+" placeholder="0">
             <button type="button" class="quantity-button" aria-label="Увеличить количество детей">+</button>
           </fieldset>
-          <button type="submit" class="button" href="catalog.html">Найти</button>
+          <button type="submit" class="button blue-button search-button">Найти</button>
         </form>
       </div>
     </section>
-    <img src="img/map.jpg" width="1200" height="593" alt="Карта">
-<!-- Для карты есть смысл предусмотреть section -->
-
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+    </section>
   </main>
 
   <footer class="main-footer">
-    <p class="footer-reference">
-      #VisitSedona
-    </p>
+    <p class="footer-reference">#VisitSedona</p>
     <section class="footer-social">
-      <button type="button" class="social-button twitter" aria-label="Седона в Твитере"></button>
-      <button type="button" class="social-button facebook" aria-label="Седона в Фейсбук"></button>
-      <button type="button" class="social-button youtube" aria-label="Седона Видео"></button>
+      <a class="blue-button social-button twitter" href="#"><span class="visually-hidden">Седона в Твитере</span></a>
+      <a class="blue-button social-button facebook" href="#"><span class="visually-hidden">Седона в Фейсбук</span></a>
+      <a class="blue-button social-button youtube" href="#"><span class="visually-hidden">Седона Видео</span></a>
     </section>
-    <p class="footer-copyright">
-      <b>Website by</b>
-      <a class="button" href="https://htmlacademy.ru">HTML Academy и ESZ</a>
-      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logo-htmlacademy">
+    <p class="footer-copyright">Website by
+      <a href="https://htmlacademy.ru">
+        <img class="footer-contact" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Лого Htmlacademy">
+      </a>
     </p>
   </footer>
 </body>
