@@ -30,20 +30,20 @@
       <h1 class="visually-hidden">Каталог гостиниц</h1>
       <section class="filter-catalog">
         <h2 class="visually-hidden">Фильтр стоимости</h2>
-        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+        <form method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="filters-list">
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
-                <input id="filter-swimming-pool" type="checkbox" name="Бассейн" checked>
+                <input class="visually-hidden filters-input" id="filter-swimming-pool" type="checkbox" name="Бассейн" checked>
                 <label for="filter-swimming-pool">Бассейн</label>
               </li>
               <li>
-                <input id="filter-parking" type="checkbox" name="Парковка">
+                <input class="visually-hidden filters-input" id="filter-parking" type="checkbox" name="Парковка">
                 <label for="filter-parking">Парковка</label>
               </li>
               <li>
-                <input id="filter-wifi" type="checkbox" name="Wi-Fi">
+                <input class="visually-hidden filters-input" id="filter-wifi" type="checkbox" name="Wi-Fi">
                 <label for="filter-wifi">Wi-Fi</label>
               </li>
             </ul>
@@ -53,25 +53,25 @@
             <legend>Тип Жилья:</legend>
             <ul>
               <li>
-                <input id="filter-hotel" type="checkbox" name="Гостиница" checked>
+                <input class="visually-hidden filters-input" id="filter-hotel" type="checkbox" name="Гостиница" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li>
-                <input id="filter-motel" type="checkbox" name="Мотель" checked>
+                <input class="visually-hidden filters-input" id="filter-motel" type="checkbox" name="Мотель" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
               <li>
-                <input id="filter-apartment" type="checkbox" name="Апартаменты" checked>
+                <input class="visually-hidden filters-input" id="filter-apartment" type="checkbox" name="Апартаменты" checked>
                 <label for="filter-apartment">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
-          <div class="filter-price-form filter-range">
+          <div class="filter-range">
             <p class="filter-range-price">Стоимость в сутки (Р):</p>
             <div class="prices">
-              <label>От<input id="min-price" name="price" type="text" value="0"></label>
-              <label>До<input id="max-price" name="price" type="text" value="3000"></label>
+              <label class="min-price">От <input id="min-price" name="price" type="text" value="0"></label>
+              <label class="max-price">До <input id="max-price" name="price" type="text" value="3000"></label>
             </div>
             <div class="slider">
               <div class="scale">
